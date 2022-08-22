@@ -1,0 +1,99 @@
+// Colors
+
+$cyan: hsl(185, 75%, 39%);
+$blue: hsl(229, 23%, 23%);
+$gray: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+
+*,*::before,::after{
+    padding:0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    max-width: 90rem;
+    min-width: 375px;
+    height: 65rem;
+    min-height: 65rem;
+    margin: 0 auto;
+    padding: 5rem;
+    background-color: $cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.container{
+    background-color: white;
+    max-width: 30rem;
+    height: 35rem;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+   
+
+    .image{
+        border-radius: 50rem;
+        border:.6rem solid #fff;
+    
+    }
+    
+}
+.info{
+    margin-top: -5rem;
+}
+.name-place{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+
+    p{
+        color: $gray;
+        font-size: 1.5rem;
+    }
+    
+}
+span{
+    margin-left: 1rem;
+    color: $gray;
+    font-weight: 200;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid $dark-gray;
+    padding: 1rem;
+    line-height: 1.7rem;
+
+    h3{
+        font-size: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    p{
+        color: $gray;
+        font-size: 1.3rem;
+    }
+}
