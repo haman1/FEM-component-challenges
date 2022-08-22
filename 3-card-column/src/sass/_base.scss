@@ -1,0 +1,48 @@
+// :root{
+//     --orange: hsl(31, 77%, 52%);
+//     --cyan: hsl(184, 100%, 22%);
+//     --dark-cyan: hsl(179, 100%, 13%);
+//     --transparent-white : hsla(0, 0%, 100%, 0.75);
+//     --light-gray : hsl(0, 0%, 95%)
+//   }
+
+$bg-orange: hsl(31, 77%, 52%);
+$bg-cyan: hsl(184, 100%, 22%);
+$bg-dark:hsl(179, 100%, 13%);
+
+$bg-transparent: hsla(0, 0%, 100%, 0.75);
+$bg-gray:hsl(0, 0%, 95%);
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 	62.5%;
+    background-color:$bg-gray;
+    
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color:$bg-gray;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    min-height: 100vh;
+    min-width: 375px;
+}
+a{
+    text-decoration: none;
+}
+
