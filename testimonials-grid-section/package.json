@@ -1,0 +1,11 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass  --no-source-map sass:public/css -w"
+  },
+  "author": "ombasah",
+  "license": "ISC"
+}
