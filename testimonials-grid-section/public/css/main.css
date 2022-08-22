@@ -1,0 +1,84 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210deg, 46%, 95%);
+  font-size: 76.9%;
+  max-width: 375px;
+  min-width: 375px;
+  height: 100vh;
+  margin: 5rem auto;
+}
+
+body {
+  font-weight: 500;
+}
+
+.container {
+  padding: 2rem;
+}
+.container .testimonials .testimonial {
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.container .testimonials .testimonial .flex {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.container .testimonials .testimonial .flex img {
+  border-radius: 20rem;
+}
+.container .testimonials .testimonial--1 {
+  background-color: hsl(263deg, 55%, 52%);
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.container .testimonials .testimonial--2 {
+  background-color: hsl(217deg, 19%, 35%);
+}
+.container .testimonials .testimonial--3 {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(219deg, 29%, 14%);
+}
+.container .testimonials .testimonial--4 {
+  background-color: hsl(219deg, 29%, 14%);
+}
+.container .testimonials .testimonial--5 {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(219deg, 29%, 14%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 70rem;
+    margin-left: -20rem;
+  }
+  .span {
+    grid-row: span2;
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .testimonials .testimonial--1 {
+    grid-column: 1/3;
+  }
+  .testimonials .testimonial--4 {
+    grid-column: span 2;
+  }
+  .testimonials .testimonial--5 {
+    grid-row: 1/3;
+    grid-column: 4;
+  }
+}
