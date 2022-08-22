@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  min-height: 100vh;
+  min-width: 375px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.column {
+  width: 80%;
+  padding: 20%;
+}
+
+.column-heading {
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  font-family: Big Shoulders Display;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+}
+
+.column-content {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 2rem;
+}
+
+.column-sedan {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 1rem 1rem 0 0;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+}
+
+.column-suv {
+  background-color: hsl(184deg, 100%, 22%);
+  padding: 2rem 1rem;
+}
+
+.column-luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  padding: 2rem 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0deg, 0%, 95%);
+  height: 4rem;
+  border-radius: 40rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn a {
+  padding: 0 2.5rem;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  background: none;
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+.btn:hover .btn-sedan {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.btn:hover .btn-suv {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.btn:hover .btn-luxury {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.btn-sedan {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.btn-suv {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179deg, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (min-width: 1400px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    flex-direction: row;
+    min-height: 100vh;
+    width: 65%;
+  }
+  .column {
+    padding: 5rem;
+  }
+  .column:first-child {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .column:last-child {
+    border-radius: 0 1rem 1rem 0;
+  }
+  .btn {
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 650px) {
+  .column {
+    width: 80%;
+    max-width: 40rem;
+    padding: 8%;
+  }
+  .btn {
+    margin-top: 5rem;
+  }
+  .column-content {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1440) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+    min-height: 100vh;
+  }
+}
