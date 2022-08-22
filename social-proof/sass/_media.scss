@@ -1,0 +1,107 @@
+@media (min-width: 1440px){
+    html{
+        max-width: 1640px;
+        min-height: 100vh;
+        padding: 5rem;
+    }
+    body{
+
+    }
+    .container{
+        .wrapperr{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            gap:5rem;
+            margin-bottom: 5rem;
+            
+           
+            .users{
+                width:35%;
+                margin-left: -20rem;
+                
+                h2{
+                    font-size: 4rem;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+
+            .ratings{
+                padding-top: 2rem;
+                width: 40%;
+                
+                .reviews{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    // margin-left: 2rem;
+                    width:100%;
+                    padding: 2rem;
+
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .guru{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width:100%;
+                    margin-left: 3rem;
+                    padding: 2rem;
+
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                }
+                .best-tech{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    padding: 2rem;
+                    width:100%;
+                    margin-left: 6rem;
+
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .buyers{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            height: 20rem;
+            // justify-content: center;
+
+            .buyer{
+                .wrapper{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap:.5rem;
+                    
+                    
+                    .photo-info{
+                       font-size: 1.2rem;
+                       line-height: 2rem;
+                    }
+                }
+                .description{
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                }
+            }
+            
+        }
+    }
+
+}
