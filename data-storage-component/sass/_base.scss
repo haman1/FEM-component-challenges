@@ -1,0 +1,247 @@
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+//Colors
+
+//Primary
+
+$gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+//Neutral
+
+$pale-blue: hsl(243, 100%, 93%);
+$grayish-blue: hsl(229, 7%, 55%);
+$blue: hsl(228, 56%, 26%);
+$dark-blue: hsl(229, 57%, 11%);
+
+//Typography
+
+// Body Copy
+
+//Font size: 14px
+
+// Font
+
+// - Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+// - Weights: 400, 700
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    
+    font-size: 71.4%;
+   
+   
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url(/images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 375px;
+    min-width: 340px;
+    min-height: 100vh;
+    margin: 5rem auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    gap:1.5rem
+}
+
+.card{
+    background-color: $blue;
+    width:80%;
+    border-radius: .8rem;
+
+    
+}
+.card-logo{
+    padding: 4rem;
+    border-top-right-radius: 10rem;
+}
+.items{
+    display:flex;
+    flex-direction: row;
+    gap:1.5rem;
+    margin-top: 2rem;
+
+    .item{
+        background-color: $dark-blue;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.card-storage{
+    padding: 3rem 2rem 5rem 2rem;
+    position: relative;
+    
+}
+
+.info{
+    color: $pale-blue;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.items-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .text{
+        color:$pale-blue;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+.progress{
+    width: 100%;
+    background-color: $dark-blue;
+    padding: .3rem;
+    border-radius: 1rem;
+    margin:1rem 0;
+}
+
+.progress-color{
+    width: 75%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    padding: .5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 1rem;
+}
+
+.ball{
+    width: 1rem;
+    height: 1rem;
+    background-color: $pale-blue;
+    border-radius: 1rem;
+
+}
+.msg-box{
+    position: absolute;
+
+    left:50%;
+    top:75%;
+
+    .msg{
+        background-color: white;
+        padding: 1.2rem 2.6rem;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        position: relative;
+        left: -50%;
+
+        strong{
+            font-size: 4rem;
+            color: $dark-blue;
+        }
+        span{
+            color: $grayish-blue;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            margin-left: .8rem;
+            white-space: nowrap;
+        }
+    }
+}
+
+.triangle{
+    display: none;
+}
+.attribution{
+    padding-top: 20rem;
+   
+}
+
+@media(min-width:1440px){
+    body{
+        background-image: url(/images/bg-desktop.png);
+        background-size: unset;
+        background-position-y: bottom;
+        background-color: $dark-blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding:20rem 5rem;
+        max-width: 1440px;
+        min-height: 100vh;
+        margin: 5rem auto;
+      
+
+    }
+    .container{
+        flex-direction: row;
+        align-items: flex-end;
+        height: fit-content;
+        gap:3rem;
+    }
+    .card-logo{
+        width: 35rem;
+    }
+    .card-storage{
+        width: 50rem;
+    }
+   
+    .info{
+        text-align: left;
+    }
+
+    .msg-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        left: unset;
+        right:3rem;
+        top:-30%;
+
+        .msg{
+            left:0;
+            border-bottom-right-radius: 0;
+        }
+
+        .triangle{
+            display: block;
+            width: 0;
+            height: 0;
+            border-right: 10px solid white;
+            border-top: 10px solid white;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            left:-5rem;
+        }
+         
+    }
+   
+    
+
+    .attribution{
+        display: none;
+       
+    }
+}
+
