@@ -1,0 +1,46 @@
+.container{
+    width:100%;
+    height: 100vh;
+    min-width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+
+.content{
+    max-width: 30rem;
+    padding: 2rem;
+    background-color: $white;
+    border-radius: 2rem;
+    margin-right: 3rem;
+    .image{
+        width: 100%;
+        height: 70%;
+        border-radius: 1rem;
+    
+    }
+
+    .text-content{
+        padding-top: 2rem;
+    .heading{
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .paragraph{
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: $gray-blue;
+        text-align: center;
+    }
+    }
+}
+
+  @media (max-width:350px){
+    .content{
+        width: 100%;
+    }
+  }

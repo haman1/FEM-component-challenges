@@ -1,0 +1,24 @@
+//Colors
+
+$white: hsl(0, 0%, 100%);
+$light: hsl(212, 45%, 89%);
+$gray-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+
+
+*,
+*:before,
+*:after{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: $light;
+}
