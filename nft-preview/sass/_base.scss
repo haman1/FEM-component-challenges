@@ -1,0 +1,41 @@
+// Colors
+
+// Primary
+
+$soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+// Neutral
+
+$main : hsl(217, 54%, 11%);
+$card : hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+   
+}
+
+body{
+    background-color: $main;
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    min-width: 375px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 1rem;
+    font-family: 'Outfit', sans-serif;
+
+}
