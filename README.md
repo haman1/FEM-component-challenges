@@ -11,3 +11,6 @@
 | 07 | [single-price-grid](https://github.com/haman1/FEM-component-challenges/tree/main/single-price-grid) | [Live Demo](https://single-price-eu7.pages.dev/) |
 | 08 | [qr-component](https://github.com/haman1/FEM-component-challenges/tree/main/qr-component) | [Live Demo](https://qr-component.pages.dev/) |
 | 09 | [product-preview](https://github.com/haman1/FEM-component-challenges/tree/main/product-preview) | [Live Demo](https://product-preview-59v.pages.dev/) |
+| 10 | [order-summary](https://github.com/haman1/FEM-component-challenges/tree/main/order-summary) | [Live Demo](https://order-summary-77o.pages.dev/) |
+| 11 | [nft-preview](https://github.com/haman1/FEM-component-challenges/tree/main/nft-preview) | [Live Demo](https://nft-preview-card-axy.pages.dev/) |
+| 12 | [four-card-feature-section](https://github.com/haman1/FEM-component-challenges/tree/main/four-card-feature-section) | [Live Demo](https://four-card-feature-section-4wu.pages.dev/) |
