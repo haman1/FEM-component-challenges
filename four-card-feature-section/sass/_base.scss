@@ -1,0 +1,121 @@
+//Layout
+
+// //The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// ### Neutral
+
+$dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$light-gray: hsl(0, 0%, 98%);
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size: 15px
+
+// // ### Fonts
+
+// - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+// - Weights: 200, 400, 600
+
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 93.7%;
+    min-height: 100vh;
+    max-width: 350px;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    background-color: #fff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $light-gray;
+    
+    h2{
+        color: $dark-blue;
+    }
+    
+    p{
+        color: $grayish-blue;
+        line-height: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    img{
+        margin-left: 14rem;
+    }
+}
+
+.container{
+    padding: 1rem;
+    .intro{
+        margin-bottom: 5rem;
+        h1{
+            color: $dark-blue;
+            margin-bottom: 1.5rem;
+            span{
+                font-weight: 400;
+                color: $grayish-blue;
+                
+            }
+        }
+
+       
+    }
+
+    .supervisor{
+        background-color: white;
+        padding: 2rem 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 2px 2px  2px 1px rgb(172, 172, 172);
+        border-radius: .5rem;
+        border-top:3px solid $cyan;
+
+    }
+    .team{
+        background-color: white;
+        padding: 2rem 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 2px 2px  2px 1px rgb(172, 172, 172);
+        border-radius: .5rem;
+        border-top:3px solid $red;
+    }
+    
+    .karma{
+        background-color: white;
+        padding: 2rem 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 2px 2px  2px 1px rgb(172, 172, 172);
+        border-radius: .5rem;
+        border-top:3px solid $orange;
+    }
+
+    .calc{
+        background-color: white;
+        padding: 2rem 1.5rem;
+        margin-bottom: 5rem;
+        box-shadow: 2px 2px  2px 1px rgb(172, 172, 172);
+        border-radius: .5rem;
+        border-top:3px solid $blue;
+    }
+}
