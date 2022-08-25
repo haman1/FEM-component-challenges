@@ -1,0 +1,126 @@
+//Colors
+
+// Primary
+
+$pale-blue1: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+//Neutral
+
+$pale-blue: hsl(225, 100%, 98%);
+$saturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+
+*,*::before,*::after{
+    padding: 0;
+    margin:0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: $pale-blue1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    min-width: 375px;
+}
+.container{
+    max-width:30rem;
+    margin: 0 auto;
+    height: 40rem;
+}
+
+.wrapper{
+    border-radius: 1rem;
+    background-color: $pale-blue;
+    text-align: center;
+
+    h1{
+        font-weight: 900;
+        color: $dark-blue;
+    }
+    p{
+        padding: 1rem 5rem;
+        line-height: 2rem;
+        color: $saturated-blue;
+        font-size: 1.4rem;
+    }
+
+    .plan{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+        background-color: $pale-blue1;
+        padding: .7rem;
+        margin-bottom: 1.5rem;
+        border-radius: 1rem;
+
+        .plan-1{
+            margin-left: -3rem;
+        }
+   
+     .duration{
+        color:$dark-blue;
+        font-size: 1.4rem;
+        font-weight: 900;
+        margin-bottom: .4rem;
+        
+     }
+     .price{
+        color: $saturated-blue;
+        font-size: 1.3rem;
+        font-weight: 500;
+        opacity: .5rem;
+     }
+     a{
+        font-size: 1.3rem;
+        font-weight: 700;
+        color:$bright-blue;
+     }
+    }
+    
+}
+.img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 2rem;
+}
+
+button{
+    display: block;
+    margin-left: 4rem;
+    background-color: $bright-blue;
+    border-radius: 1rem;
+    color: $pale-blue;
+    padding: 1rem;
+    border-color: transparent;
+    width: 65%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px hsl(245, 75%, 52%, 0.15), 15px 15px 30px hsl(245, 75%, 52%, 0.15);
+
+    &:hover{
+        opacity: .7;
+    }
+}
+
+.cancel{
+    $color:$saturated-blue;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $saturated-blue;
+
+    &:hover{
+        color: $dark-blue;
+    }
+}
+
